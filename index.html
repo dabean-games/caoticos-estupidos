@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas Básicas de D&D 5e</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Caóticos estúpidos</h1>
+    </header>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'generalTab')" id="defaultOpen">General</button>
+        <button class="tablinks" onclick="openTab(event, 'descansosTab')">Descansos</button>
+        <button class="tablinks" onclick="openTab(event, 'combateTab')">Combate</button>
+        <button class="tablinks" onclick="openTab(event, 'accionesCombateTab')">Acciones Combate</button>
+        <button class="tablinks" onclick="openTab(event, 'condicionesActivasTab')">Condiciones Activas</button>
+        <button class="tablinks" onclick="openTab(event, 'enconstruccionTab')">En construcción</button>
+    </div>
+
+    <div id="generalTab" class="tab-content">
+        <h2>General</h2>
+        <ul>
+            <li><strong>Ventaja:</strong> Tira ‘Roll’ 2 d20 y quédate con el resultado más alto, y después añade los
+                modificadores pertinentes. Muchos efectos pueden dar ventaja para las tiradas de habilidad o
+                tiradas de salvación, hechizos, la ayuda de un aliado, un enemigo sorprendido o debilitado, o
+                incluso un buen roleo.</li>
+            <li><strong>Desventaja:</strong> Tira ‘Roll’ 2 d20 y quédate con el resultado más bajo, y después añade los
+                modificadores pertinentes. Como la ventaja, la desventaja puede venir de diferentes lugares,
+                como una conversación tensa, algo que te debilite o un hechizo enemigo.
+                Nota: La Ventaja y la Desventaja no se pueden acumular, lo que significa que nunca tendrás que tirar
+                más de 2 d20 y coger el más bajo/más alto. Con esto en mente, si una fuente está proporcionando
+                ventaja, mientras que otra fuente está proporcionando desventaja, se cancelan mutuamente y realizas
+                una tirada normal, un solo d20 + modificadores.</li>
+            <li><strong>Concentración:</strong> Si un hechizo requiere concentración, dura lo que diga el hechizo o
+                hasta
+                que rompas la concentración, lo cual puedes hacer en cualquier momento, o si esta se rompe
+                al recibir daño. Puedes concentrarte solamente en un hechizo al mismo tiempo. Si recibes daño
+                mientras te concentras tienes que hacer una tirada de salvación (TS) Constitución (CON), con
+                una Clase de Dificutad (CD) equivalente a la mitad del daño recibido redondeado hacia arriba, o
+                una CD mínima de 10 si es menor.<br>
+                &emsp;<i>Ejemplo</i>: Si te estás concentrando en un hechizo y recibes 12 de daño, debes superar una TS
+                CON de
+                CD10. Si te estás concentrando en un hechizo y recibes 25 de daño, debes superar una TS CON de CD13.
+            </li>
+            <li><strong>Lanzando ‘Casteando’ Hechizos:</strong>Cuando lanzas un hechizo (nivel 1 o superior) debes
+                marcar el hueco para hechizo al nivel que fue lanzado. Un hechizo puede ser lanzado tantas
+                veces al día como huecos de hechizo tengas. Los hechizos pueden ser lanzados utilizando huecos
+                de mayor nivel para hacerlos más poderosos en algunos casos, o si te has quedado sin huecos de
+                hechizo de menor nivel.<br>
+                &emsp;<i>Ejemplo</i>: Si quieres lanzar un hechizo de nivel 1, pero solo tienes huecos de nivel 3,
+                puedes decidir
+                gastar un hueco de nivel 3 para lanzar ese hechizo. Asegúrate de si tiene efectos adicionales al
+                lanzarlo a
+                niveles más altos!</li>
+            <li><strong>Haciendo ataques a distancia (Hechizos y Armas):</strong> Haciendo ataques a distancia (Hechizos
+                y Armas): Los hechizos y armas con un alcance
+                más allá del cuerpo a cuerpo pueden incurrir en desventaja si se hacen cuerpo a cuerpo de un
+                enemigo, incluso si ese enemigo no es el objetivo. Las armas a distancia tienen dos etiquetas de
+                alcance, normal/largo. Pasado el alcance normal, se incurre en una desventaja, y más allá del
+                alcance largo el ataque no golpea.</li>
+            <li><strong>Quedándote inconsciente:</strong> 0 puntos de golpe no significan muerte automáticamente, en su
+                lugar te quedas inconsciente y tienes que realizar tiradas de salvación contra muerte. Este es
+                normalmente un caso único para PERSONAJES DE JUGADORES. Al inicio de tu turno,
+                debes tirar un d20. Con un 10 o más, has superado 1 tirada de salvación contra muerte. 9 o
+                menos significa que has fallado la tirada contra salvación muerte. Un crítico (Nat20) significa
+                que automáticamente recuperas la consciencia con 1 punto de golpe (PG). Una pifia (Nat1)
+                significa que has fallado 2 tiradas de salvación contra muerte. Las tiradas de salvación contra
+                muerte continúan hasta que se logran 3 éxitos o 3 fallos, o alguien te cura.
+                Nota: Mientras estás inconsciente, si te curan recuperas la consciencia y tantos PG como te de la cura.
+                Si tienes 3 éxitos en la TS contra muerte, quedas estable y ya no estás muriendo, pero sigues
+                inconsciente
+                con 0 PG. Si fallas 3 veces, tu personaje muere.</li>
+    </div>
+
+    <div id="descansosTab" class="tab-content">
+        <h2>Descansos</h2>
+        <p>Descansos – Curándote y Dados de Golpe: Hay dos tipos de descansos en D&D, el largo y
+            el corto.</p>
+        <ul>
+            <li><strong>Descanso largo:</strong> Después de un descanso largo recuperas todos los PG perdidos, todos los
+                huecos de hechizo, y la mitad de tu máximo de dados de golpe redondeado hacia arriba, así como
+                cualquier rasgo de raza o clase que solo puedas usar una vez por descanso largo. Este descanso
+                dura 8 horas (1 noche completa de sueño) y es difícil de conseguir debido a los peligros del
+                mundo, por lo que debes buscar un lugar seguro para descansar.</li>
+            <li><strong>Descanso corto:</strong> Durante un descanso corto puedes elegir gastar cualquier número de
+                dados de
+                golpe (de tu máximo) y realizar una tirada con ellos para recuperar tantos PG como resultado de
+                la tirada. Cualquier habilidad usable una vez por descanso corto también se recupera. <strong><u>Los
+                        huecos
+                        de hechizo NO se recuperan durante este descanso.</u></strong> Este descanso dura
+                aproximadamente 1
+                hora y actividades sencillas pueden ser completadas mientras se hace (como arreglar un arma,
+                sintonizarse con un objeto, etc.)</li>
+            <li><strong>Concentración:</strong> Algunos hechizos requieren que el lanzador se concentre, lo que
+                significa que no puede lanzar otro hechizo que requiera concentración al mismo tiempo.</li>
+        </ul>
+    </div>
+
+    <div id="combateTab" class="tab-content">
+        <h2>Combate</h2>
+        <ul>
+            <li><strong>Éxito Crítico – Natural 20 (Nat20):</strong> <i>Cuando hagas una tirada de ataque y el resultado
+                    del dado (sin modificadores) es un 20, eso es un éxito crítico.</i>
+                Un éxito crítico NO PUEDE
+                FALLAR, y dobla el daño del dado. Para esto hay dos opciones, puedes lanzar el daño y duplicar
+                el resultado, o tirar los dados dos veces, pero debes escoger antes de realizar la tirada.
+                <i>Ejemplo: Sacas un Nat20 en un ataque con una espada corta (1d6+3 daño). Puedes elegir tirar 1d6 y
+                    doblar el resultado (y después sumar el +3), o tirar 2d6 y sumar el +3.
+                    Nota: Un fallo crítico en el ataque SIEMPRE FALLARÁ el objetivo, aunque técnicamente puedas superar
+                    su CA, y en algunos casos, puede tener consecuencias.
+                </i>
+            </li>
+    </div>
+
+    <div id="accionesCombateTab" class="tab-content">
+        <h2>Acciones Combate</h2>
+        <ul>
+            <li><strong>Acciones en combate – Economía y opciones:</strong> 1 ronda o asalto de combate dura
+                únicamente 6 segundos, lo cual es importante recordar cuando consideres tu economía de
+                acción o cuando sientas que no puedes hacer demasiado en tu turno.
+            </li>
+            <li>
+                <strong><u>Economía:</u></strong> Cada jugador tiene 1 acción, 1 acción adicional, 1 acción gratis,
+                movimiento y 1
+                reacción en cada ronda o asalto. Como estas se utilizan depende del jugador.
+            </li>
+            <li>
+                <strong><u>Acción:</u></strong> La mayoría de las cosas requerirán una acción para hacerlas. Lanzar
+                hezhicos
+                “grandes”, ataques con armas, y muchas otras cosas.
+            </li>
+            <li>
+                <strong><u>Acción adicional:</u></strong> Una acción “corta” que normalmente puede hacerse muy rápido.
+                Lanzar un
+                hechizo “pequeño”, activar la furia o atacar con la mano adicional. No todo el mundo tiene
+                muchas habilidades de acción adicional.
+            <li>
+                <strong><u>Acción gratis:</u></strong> Algo sin consecuencia como sacar una daga del cinto, gritarle a
+                tus compañeros
+                desde el otro lado de la habitación, o insultar al enemigo.
+            </li>
+            <li>
+                <strong><u>Movimiento:</u></strong> Moverte tan lejos como tu movimiento te lo permita a lo largo del
+                campo de
+                batalla.
+            </li>
+            <li>
+                <strong><u>Reacción:</u></strong> Muchos hechizos pueden lanzarse como reacción, pero lo importante es
+                el ataque de
+                oportunidad. Si haces un ataque de oportunidad, no puedes utilizar tu reacción hasta tu
+                siguiente turno.<br>
+                <i>Nota: Ten en cuenta que los enemigos también tienen reacción y pueden realizar ataques de
+                    oportunidad</i>
+            </li>
+        </ul>
+        <h2>
+            <li><strong><u>Opciones:</u></strong> Atacar y moverte pueden parecer tus únicas opciones en combate, pero
+                hay otras opciones que no siempre son tan obvias.</li>
+        </h2>
+        <ul>
+            <li><strong>Ayudar</strong> <i>Darle a un aliado ventaja en su siguiente tirada de habilidad con la que lo
+                    estés ayudando, o ventaja al siguiente ataque contra un enemigo del que tú estés a 5 pies o menos
+                    hasta tu siguiente turno. Esto consume una acción.</i></li>
+            <li><strong>Agarrar</strong> <i>Haces una tirada de FUE enfrentada contra una del enemigo para tratar de
+                    agarrarlo. Esto consume una acción.</i></li>
+            <li><strong>Empujar</strong> <i>Haces una tirada de FUE enfrentada contra una del enemigo para tratar de
+                    empujarlo 5 pies. Esto consume una acción.</i></li>
+            <li><strong>Esprintar o ‘Dash’</strong> <i>Duplica tu velocidad de movimiento durante el turno actual. Esto
+                    consume una acción.</i></li>
+            <li><strong>Destrabarse</strong> <i>Haces una maniobra con la que puedes escapar de los enemigos a tu
+                    alrededor sin provocar ataques de oportunidad por parte de estos. Esto consume una acción.</i></li>
+            <li><strong>Esquivar</strong> <i>Hasta tu siguiente turno, los ataques hechos contra ti tienen desventaja y
+                    tienes ventaja en las TS de Destreza. Esto consume una acción.</i></li>
+            <li><strong>Esconderte</strong> <i>Haces una tirada de Sigilo para intentar ocultarte de los enemigos. Esto
+                    consume una acción.</i></li>
+            <li><strong>Preparar</strong> <i>Preparar un ataque o hechizo para ser usado como reacción con una condición
+                    específica. Esto consume una acción. <strong>Nota:</strong> Si un hechizo es preparado de esta forma
+                    y no se dispara, el hueco de hechizo sigue siendo consumido. Se te considera concentrado mientras
+                    preparas el hechizo.</i></li>
+            <li><strong>Buscar</strong> <i>Hacer una tirada de Investigación o Percepción para buscar a tu alrededor.
+                    Útil para identificar enemigos escondidos u ocultos, como también para buscar una vía de escape por
+                    si la cosa se complica. Esto consume una acción.</i></li>
+            <li><strong>Usar un objeto</strong> <i>Un objeto que requiere tiempo para interactuar con él, como por
+                    ejemplo una llave para abrir una puerta, o activar un objeto mágico. Esto consume una acción.</i>
+            </li>
+            <li><strong>Improvisar</strong> <i>No estás limitado a estas acciones y tus habilidades de combate. Este es
+                    un juego de rol, y si te gustaría intentar algo épico (loco más bien, pero en tu cabeza suena
+                    mejor), podemos buscar una forma de hacerlo mediante alguna tirada de dados.</i></li>
+        </ul>
+    </div>
+
+    <div id="condicionesActivasTab" class="tab-content">
+        <h2>Condiciones Activas</h2>
+        <ul>
+            <li><strong>Cegado</strong> <i>No puedes ver y fallas las tiradas de habilidad que requieran de la vista
+                    automáticamente. Los ataques contra ti se hacen con ventaja, y tienes desventaja para atacar.</i>
+            </li>
+            <li><strong>Hechizado</strong> <i>Ves a quien te ha hechizado como un aliado. No puedes atacarlo o herirlo
+                    de ninguna forma a propósito. Quien te ha hechizado tiene ventaja en todas las tiradas sociales
+                    contra ti.</i></li>
+            <li><strong>Ensordecido</strong> <i>No puedes oír y fallas las tiradas de habilidad que requieran del oído
+                    automáticamente.</i></li>
+            <li><strong>Asustado</strong> <i>Estás asustado y no puedes enfrentar tu miedo. Tienes desventaja en las
+                    tiradas de habilidad y tiradas de ataque si puedes ver la fuente de tu miedo. No puedes moverte
+                    voluntariamente hacia la fuente de tu miedo.</i></li>
+            <li><strong>Agarrado</strong> <i>Algo o alguien te sujeta, no permitiéndote moverte. Tienes una velocidad de
+                    0. La condición solo termina si consigues liberarte, escapando del agarre, siendo lanzado a un lado
+                    o si quien te agarra queda incapacitado.</i></li>
+            <li><strong>Incapacitado</strong> <i>No puedes llevar a cabo acciones ni reacciones.</i></li>
+            <li><strong>Invisible</strong> <i>Estás completamente oculto a la vista. No puedes ser visto sin ayuda
+                    mágica o algún sentido especial. Puedes ser detectado por algún ruido que hagas o tus huellas. Las
+                    tiradas de ataque contra ti tienen desventaja, y tus tiradas de ataque tienen ventaja.</i></li>
+            <li><strong>Paralizado</strong> <i>Estás incapacitado, y además tampoco eres capaz de moverte o hablar.
+                    Fallas automáticamente las TS de fuerza y destreza. Las tiradas de ataque contra ti tienen ventaja.
+                    Los ataques cuerpo a cuerpo contra ti son automáticamente un crítico si aciertan.</i></li>
+            <li><strong>Petrificado</strong> <i>Estás transformado en piedra, al igual que tu ropa y tus pertenencias.
+                    Tu peso incrementa 10 veces y no envejeces. Estás paralizado, y no eres consciente de tus
+                    alrededores, pero los ataques cuerpo a cuerpo NO pueden ser críticos. Eres resistente a todo tipo de
+                    daño, e inmune al veneno y enfermedad.</i></li>
+            <li><strong>Envenenado</strong> <i>Te sientes enfermo y no puedes rendir bien. Tienes desventaja en las
+                    tiradas de ataque y tiradas de habilidad.</i></li>
+            <li><strong>Derribado</strong> <i>Estás en el suelo. Tus únicas opciones son arrastrarte o levantarte.
+                    Tienes desventaja en las tiradas de ataque. Los ataques cuerpo a cuerpo contra ti tienen ventaja,
+                    mientras que los ataques a distancia tienen desventaja.</i></li>
+            <li><strong>Retenido</strong> <i>Algo te retiene. Tienes una velocidad de 0, desventaja en las tiradas de
+                    ataque y TS destreza. Los ataques contra ti tienen ventaja.</i></li>
+            <li><strong>Aturdido</strong> <i>Estás mareado. Incapacitado, no puedes moverte y apenas puedes hablar. Los
+                    ataques contra ti tienen ventaja, y fallas automáticamente las TS fuerza y destreza.</i></li>
+            <li><strong>Inconsciente</strong> <i>Estás muriendo, paralizado y derribado, e ignorante de tus alrededores.
+                    Los ataques cuerpo a cuerpo contra ti que acierten son automáticamente críticos, y pierdes 2 TS
+                    contra muerte.</i></li>
+        </ul>
+    </div>
+
+    <div id="enconstruccionTab" class="tab-content">
+        <img src="https://ih1.redbubble.net/image.483101404.7266/aps,504x498,small,transparent-pad,600x600,f8f8f8.u1.jpg">
+        <br>
+        A ver pa que miras.
+    </div>
+
+    <footer>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Abre la primera pestaña por defecto
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
