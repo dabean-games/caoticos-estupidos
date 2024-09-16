@@ -15,8 +15,9 @@
     </header>
 
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'generalTab')" id="defaultOpen">General</button>
-        <button class="tablinks" onclick="openTab(event, 'descansosTab')">Descansos</button>
+        <button class="tablinks" onclick="openTab(event, 'generalTab')" id="defaultOpen">Mecánicas de juego
+            generales</button>
+        <button class="tablinks" onclick="openTab(event, 'descansosTab')">Descansos y curación</button>
         <button class="tablinks" onclick="openTab(event, 'combateTab')">Combate</button>
         <button class="tablinks" onclick="openTab(event, 'accionesCombateTab')">Acciones Combate</button>
         <button class="tablinks" onclick="openTab(event, 'condicionesActivasTab')">Condiciones Activas</button>
@@ -24,97 +25,144 @@
     </div>
 
     <div id="generalTab" class="tab-content">
-        <h2>General</h2>
+        <h2>Mecánicas de juego generales</h2>
         <ul>
-            <li><strong>Ventaja:</strong> Tira ‘Roll’ 2 d20 y quédate con el resultado más alto, y después añade los
-                modificadores pertinentes. Muchos efectos pueden dar ventaja para las tiradas de habilidad o
-                tiradas de salvación, hechizos, la ayuda de un aliado, un enemigo sorprendido o debilitado, o
-                incluso un buen roleo.</li>
-            <li><strong>Desventaja:</strong> Tira ‘Roll’ 2 d20 y quédate con el resultado más bajo, y después añade los
-                modificadores pertinentes. Como la ventaja, la desventaja puede venir de diferentes lugares,
-                como una conversación tensa, algo que te debilite o un hechizo enemigo.
-                Nota: La Ventaja y la Desventaja no se pueden acumular, lo que significa que nunca tendrás que tirar
-                más de 2 d20 y coger el más bajo/más alto. Con esto en mente, si una fuente está proporcionando
-                ventaja, mientras que otra fuente está proporcionando desventaja, se cancelan mutuamente y realizas
-                una tirada normal, un solo d20 + modificadores.</li>
-            <li><strong>Concentración:</strong> Si un hechizo requiere concentración, dura lo que diga el hechizo o
-                hasta
-                que rompas la concentración, lo cual puedes hacer en cualquier momento, o si esta se rompe
-                al recibir daño. Puedes concentrarte solamente en un hechizo al mismo tiempo. Si recibes daño
-                mientras te concentras tienes que hacer una tirada de salvación (TS) Constitución (CON), con
-                una Clase de Dificutad (CD) equivalente a la mitad del daño recibido redondeado hacia arriba, o
-                una CD mínima de 10 si es menor.<br>
-                &emsp;<i>Ejemplo</i>: Si te estás concentrando en un hechizo y recibes 12 de daño, debes superar una TS
-                CON de
-                CD10. Si te estás concentrando en un hechizo y recibes 25 de daño, debes superar una TS CON de CD13.
+            <li><strong>Ventaja:</strong><span class="important">Tira ‘Roll’ 2d20 y quédate con el resultado más alto, y
+                    después añade los modificadores
+                    pertinentes.</span> Muchos efectos pueden dar ventaja para las tiradas de habilidad o tiradas de
+                salvación,
+                hechizos, la ayuda de un aliado, un enemigo sorprendido o debilitado, o incluso un buen roleo.</li>
+            <li><strong>Desventaja:</strong><span class="important">Tira ‘Roll’ 2d20 y quédate con el resultado más
+                    bajo, y después añade los modificadores
+                    pertinentes.</span> Como la ventaja, la desventaja puede venir de diferentes lugares, como una
+                conversación tensa, algo que te debilite o un hechizo enemigo.
+                <br>
+                <i><u>Nota:</u></i><span class="important"> La Ventaja y la Desventaja no se pueden acumular</span>, lo
+                que
+                significa que<span class="important">nunca tendrás que tirar
+                    más de 2d20 y coger el más bajo/más alto.</span> Con esto en mente, si una fuente está
+                proporcionando
+                ventaja, mientras que otra fuente está proporcionando desventaja, <span class="important">se cancelan
+                    mutuamente y
+                    realizas una tirada normal, un solo d20 + modificadores.</span>
             </li>
-            <li><strong>Lanzando ‘Casteando’ Hechizos:</strong>Cuando lanzas un hechizo (nivel 1 o superior) debes
-                marcar el hueco para hechizo al nivel que fue lanzado. Un hechizo puede ser lanzado tantas
-                veces al día como huecos de hechizo tengas. Los hechizos pueden ser lanzados utilizando huecos
-                de mayor nivel para hacerlos más poderosos en algunos casos, o si te has quedado sin huecos de
-                hechizo de menor nivel.<br>
-                &emsp;<i>Ejemplo</i>: Si quieres lanzar un hechizo de nivel 1, pero solo tienes huecos de nivel 3,
+            <li><strong>Concentración:</strong>Si un hechizo requiere concentración, dura lo que diga el hechizo o hasta
+                que
+                rompas la concentración, lo cual puedes hacer en cualquier momento, o si esta se rompe al recibir
+                daño. <span class="important">Puedes concentrarte solamente en un hechizo al mismo tiempo. Si recibes
+                    daño mientras te
+                    concentras tienes que hacer una tirada de salvación (TS) Constitución (CON), con una Clase de
+                    Dificutad (CD) equivalente a la mitad del daño recibido redondeado hacia arriba, o una CD mínima de
+                    10 si es menor.</span>
+                <br>
+                <i><u>Ejemplo:</u></i> Si te estás concentrando en un hechizo y recibes 12 de daño, debes superar una
+                <b>TS CON</b>
+                de <b>CD10</b>. Si te estás concentrando en un hechizo y recibes 25 de daño, debes superar una <b>TS
+                    CON</b>
+                de <b>CD13</b>.
+            </li>
+            <li><strong>Lanzando ‘Casteando’ Hechizos:</strong><span class="important">Cuando lanzas un hechizo</span>
+                (nivel 1 o superior) <span class="important">debes marcar el
+                    hueco para hechizo al nivel que fue lanzado.</span> Un hechizo puede ser lanzado tantas veces al día
+                como
+                huecos de hechizo tengas. <span class="important">Los hechizos pueden ser lanzados utilizando huecos de
+                    mayor nivel</span> para
+                hacerlos más poderosos en algunos casos, o si te has quedado sin huecos de hechizo de menor
+                nivel.
+                <br>
+                <i><u>Ejemplo:</u></i> Si quieres lanzar un hechizo de nivel 1, pero solo tienes huecos de nivel 3,
                 puedes decidir
                 gastar un hueco de nivel 3 para lanzar ese hechizo. Asegúrate de si tiene efectos adicionales al
-                lanzarlo a
-                niveles más altos!</li>
-            <li><strong>Haciendo ataques a distancia (Hechizos y Armas):</strong> Haciendo ataques a distancia (Hechizos
-                y Armas): Los hechizos y armas con un alcance
-                más allá del cuerpo a cuerpo pueden incurrir en desventaja si se hacen cuerpo a cuerpo de un
-                enemigo, incluso si ese enemigo no es el objetivo. Las armas a distancia tienen dos etiquetas de
-                alcance, normal/largo. Pasado el alcance normal, se incurre en una desventaja, y más allá del
-                alcance largo el ataque no golpea.</li>
-            <li><strong>Quedándote inconsciente:</strong> 0 puntos de golpe no significan muerte automáticamente, en su
-                lugar te quedas inconsciente y tienes que realizar tiradas de salvación contra muerte. Este es
-                normalmente un caso único para PERSONAJES DE JUGADORES. Al inicio de tu turno,
-                debes tirar un d20. Con un 10 o más, has superado 1 tirada de salvación contra muerte. 9 o
-                menos significa que has fallado la tirada contra salvación muerte. Un crítico (Nat20) significa
-                que automáticamente recuperas la consciencia con 1 punto de golpe (PG). Una pifia (Nat1)
-                significa que has fallado 2 tiradas de salvación contra muerte. Las tiradas de salvación contra
-                muerte continúan hasta que se logran 3 éxitos o 3 fallos, o alguien te cura.
-                Nota: Mientras estás inconsciente, si te curan recuperas la consciencia y tantos PG como te de la cura.
-                Si tienes 3 éxitos en la TS contra muerte, quedas estable y ya no estás muriendo, pero sigues
-                inconsciente
-                con 0 PG. Si fallas 3 veces, tu personaje muere.</li>
+                lanzarlo a niveles más altos!
+            </li>
+            <li><strong>Haciendo ataques a distancia (Hechizos y Armas):</strong>Los hechizos y armas con un alcance más
+                allá
+                del cuerpo a cuerpo <span class="important">pueden incurrir en desventaja si se hacen cuerpo a cuerpo de
+                    un enemigo</span>,
+                incluso si ese enemigo no es el objetivo. <span class="important">Las armas a distancia tienen dos
+                    etiquetas de alcance</span>,
+                normal/largo. <span class="important">Pasado el alcance normal, se incurre en una desventaja, y más allá
+                    del alcance largo el
+                    ataque no golpea</span>.
+            </li>
+            <li><strong>Quedándote inconsciente:</strong><span class="important">0 puntos de golpe no significan muerte
+                    automáticamente, en su lugar te
+                    quedas inconsciente y tienes que realizar tiradas de salvación contra muerte.</span>.
+                <br>
+                <br>
+                &emsp;Este es normalmente un caso único para <b>PERSONAJES DE JUGADORES</b>.
+                <br>
+                <br>
+                <span class="important">Al inicio de tu turno, debes tirar un d20. Con un 10 o más, has superado 1
+                    tirada de salvación contra
+                    muerte. 9 o menos significa que has fallado la tirada</span> contra salvación muerte. <span
+                    class="important">Un crítico (Nat20)
+                    significa que automáticamente recuperas la consciencia con 1 punto de golpe (PG). Una pifia (Nat1)
+                    significa que has fallado 2 tiradas de salvación contra muerte.</span> Las tiradas de salvación
+                contra muerte
+                <span class="important">continúan hasta que se logran 3 éxitos o 3 fallos</span>, o alguien te cura.
+                Nota: Mientras estás inconsciente, si te curan recuperas la consciencia y tantos PG como te de la
+                cura. Si tienes 3 éxitos en la TS contra muerte, quedas estable y ya no estás muriendo, pero sigues
+                inconsciente con 0 PG. Si fallas 3 veces, tu personaje muere.
+                <i><u>Nota:</u></i> Mientras estás inconsciente, si te curan recuperas la consciencia y tantos PG como
+                te de la
+                cura. Si tienes 3 éxitos en la TS contra muerte, quedas estable y ya no estás muriendo, pero sigues
+                inconsciente con 0 PG. <span class="important">Si fallas 3 veces, tu personaje muere.</span>
+            </li>
+
     </div>
 
     <div id="descansosTab" class="tab-content">
-        <h2>Descansos</h2>
-        <p>Descansos – Curándote y Dados de Golpe: Hay dos tipos de descansos en D&D, el largo y
-            el corto.</p>
+        <h2>Descansos y curación</h2>
+        <p>En D&D hay dos tipos de descanso para los personajes (Pjs) con los que pueden curar su salud y
+            recuperar recursos como conjuros gastados, el descanso largo y descanso corto.</p>
         <ul>
-            <li><strong>Descanso largo:</strong> Después de un descanso largo recuperas todos los PG perdidos, todos los
-                huecos de hechizo, y la mitad de tu máximo de dados de golpe redondeado hacia arriba, así como
-                cualquier rasgo de raza o clase que solo puedas usar una vez por descanso largo. Este descanso
-                dura 8 horas (1 noche completa de sueño) y es difícil de conseguir debido a los peligros del
-                mundo, por lo que debes buscar un lugar seguro para descansar.</li>
-            <li><strong>Descanso corto:</strong> Durante un descanso corto puedes elegir gastar cualquier número de
-                dados de
-                golpe (de tu máximo) y realizar una tirada con ellos para recuperar tantos PG como resultado de
-                la tirada. Cualquier habilidad usable una vez por descanso corto también se recupera. <strong><u>Los
-                        huecos
-                        de hechizo NO se recuperan durante este descanso.</u></strong> Este descanso dura
-                aproximadamente 1
-                hora y actividades sencillas pueden ser completadas mientras se hace (como arreglar un arma,
-                sintonizarse con un objeto, etc.)</li>
-            <li><strong>Concentración:</strong> Algunos hechizos requieren que el lanzador se concentre, lo que
-                significa que no puede lanzar otro hechizo que requiera concentración al mismo tiempo.</li>
+            <li><strong>Descanso largo:</strong> Este descanso dura <span class="important">horas (1 noche completa de
+                    sueño)</span> y es difícil de conseguir
+                debido a los peligros del mundo, por lo que debes buscar un lugar seguro para descansar. <span
+                    class="important">Después
+                    de un descanso largo recuperas todos los PG perdidos, todos los huecos de hechizo, y la mitad de tu
+                    máximo de dados de golpe redondeado hacia arriba, así como cualquier rasgo</span> de raza o clase
+                que
+                solo puedas usar una vez por descanso largo.
+            </li>
+            <li><strong>Descanso corto:</strong> Este descanso <span class="important">dura aproximadamente 1
+                    hora</span> y actividades sencillas pueden ser
+                completadas mientras se hace (como arreglar un arma, sintonizarse con un objeto, etc.). Durante un
+                descanso corto <span class="important">puedes elegir gastar cualquier número de dados de golpe (de tu
+                    máximo) y realizar
+                    una tirada con ellos para recuperar tantos PG como resultado de la tirada</span>. Cualquier rasgo
+                utilizable
+                una vez por descanso corto también se recupera. <span class="important">Los huecos de hechizo NO se
+                    recuperan</span> durante
+                este descanso.</li>
         </ul>
     </div>
 
     <div id="combateTab" class="tab-content">
         <h2>Combate</h2>
         <ul>
-            <li><strong>Éxito Crítico – Natural 20 (Nat20):</strong> <i>Cuando hagas una tirada de ataque y el resultado
-                    del dado (sin modificadores) es un 20, eso es un éxito crítico.</i>
-                Un éxito crítico NO PUEDE
-                FALLAR, y dobla el daño del dado. Para esto hay dos opciones, puedes lanzar el daño y duplicar
-                el resultado, o tirar los dados dos veces, pero debes escoger antes de realizar la tirada.
-                <i>Ejemplo: Sacas un Nat20 en un ataque con una espada corta (1d6+3 daño). Puedes elegir tirar 1d6 y
-                    doblar el resultado (y después sumar el +3), o tirar 2d6 y sumar el +3.
-                    Nota: Un fallo crítico en el ataque SIEMPRE FALLARÁ el objetivo, aunque técnicamente puedas superar
-                    su CA, y en algunos casos, puede tener consecuencias.
-                </i>
+            <li><strong>Éxito Crítico – Natural 20 (Nat20):</strong>
+                Cuando hagas una tirada de ataque y <span class="important">el resultado del dado (sin
+                    modificadores) es un 20, eso es un éxito crítico</span>. Un éxito crítico NO PUEDE FALLAR, y <span
+                    class="important">dobla el daño</span>
+                del dado. Para esto hay dos opciones, puedes lanzar el daño y duplicar el resultado, o tirar los dados
+                dos veces, pero debes escoger antes de realizar la tirada.
+                <br>
+                <i><u>Ejemplo:</u></i> Sacas un Nat20 en un ataque con una espada corta (1d6+3 daño). Puedes elegir
+                tirar 1d6 y
+                doblar el resultado (y después sumar el +3), o tirar 2d6 y sumar el +3.
+            </li>
+            <li><strong>Fallo Crítico [Pifia] – Natural 1 (Nat1):</strong>
+                Cuando hagas una tirada de ataque y <span class="important">el resultado del dado
+                    (sin modificadores) es un 1, eso es un fallo crítico</span>. Un fallo crítico SIEMPRE FALLA, aunque
+                técnicamente puedas superar su CA. En algunos casos, dependiendo de la acción que intentabas
+                realizar, puede tener consecuencias.
+                <br>
+                <i><u>Ejemplo:</u></i> Sacas un Nat1 en un ataque con una espada corta (1d6+3 daño). No solo no haces
+                ningún
+                daño, sino que además es posible que la espada acabe cayéndose de tu mano o peor, que acabe
+                clavada en algún aliado.
             </li>
     </div>
 
@@ -239,7 +287,8 @@
     </div>
 
     <div id="enconstruccionTab" class="tab-content">
-        <img src="https://ih1.redbubble.net/image.483101404.7266/aps,504x498,small,transparent-pad,600x600,f8f8f8.u1.jpg">
+        <img
+            src="https://ih1.redbubble.net/image.483101404.7266/aps,504x498,small,transparent-pad,600x600,f8f8f8.u1.jpg">
         <br>
         A ver pa que miras.
     </div>
